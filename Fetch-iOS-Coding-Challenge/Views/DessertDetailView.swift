@@ -19,7 +19,7 @@ struct DessertDetailView: View {
                     .ignoresSafeArea()
 
                 VStack(spacing: 25){
-                    Text(dessert.strMeal)
+                    Text(detailViewModel.detail?.strMeal ?? "N/A")
                         .font(Font.title).bold()
                     KFImage(URL(string: dessert.strMealThumb))
                         .resizable()
