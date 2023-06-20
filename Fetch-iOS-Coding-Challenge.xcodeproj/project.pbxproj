@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C3B7CEF2A42354B008DCEF9 /* DessertDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7CEE2A42354B008DCEF9 /* DessertDetail.swift */; };
+		5C3B7CF12A4236C8008DCEF9 /* DessertDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7CF02A4236C8008DCEF9 /* DessertDetailViewModel.swift */; };
 		5C8A0A742A4220D8002F6A14 /* Fetch_iOS_Coding_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A732A4220D8002F6A14 /* Fetch_iOS_Coding_ChallengeApp.swift */; };
 		5C8A0A762A4220D8002F6A14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A752A4220D8002F6A14 /* ContentView.swift */; };
 		5C8A0A782A4220D9002F6A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A0A772A4220D9002F6A14 /* Assets.xcassets */; };
@@ -14,9 +16,12 @@
 		5C8A0A852A4221B6002F6A14 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A842A4221B6002F6A14 /* Meal.swift */; };
 		5C8A0A872A42225E002F6A14 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A862A42225E002F6A14 /* MealViewModel.swift */; };
 		5C8A0A8A2A4226A1002F6A14 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8A0A892A4226A1002F6A14 /* Kingfisher */; };
+		5C8A0A8C2A42311B002F6A14 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A8B2A42311B002F6A14 /* DessertDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C3B7CEE2A42354B008DCEF9 /* DessertDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetail.swift; sourceTree = "<group>"; };
+		5C3B7CF02A4236C8008DCEF9 /* DessertDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewModel.swift; sourceTree = "<group>"; };
 		5C8A0A702A4220D8002F6A14 /* Fetch-iOS-Coding-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fetch-iOS-Coding-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8A0A732A4220D8002F6A14 /* Fetch_iOS_Coding_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_iOS_Coding_ChallengeApp.swift; sourceTree = "<group>"; };
 		5C8A0A752A4220D8002F6A14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		5C8A0A7A2A4220D9002F6A14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5C8A0A842A4221B6002F6A14 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		5C8A0A862A42225E002F6A14 /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
+		5C8A0A8B2A42311B002F6A14 /* DessertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8A0A842A4221B6002F6A14 /* Meal.swift */,
+				5C3B7CEE2A42354B008DCEF9 /* DessertDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -87,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8A0A752A4220D8002F6A14 /* ContentView.swift */,
+				5C8A0A8B2A42311B002F6A14 /* DessertDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -95,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8A0A862A42225E002F6A14 /* MealViewModel.swift */,
+				5C3B7CF02A4236C8008DCEF9 /* DessertDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -177,6 +186,9 @@
 			files = (
 				5C8A0A762A4220D8002F6A14 /* ContentView.swift in Sources */,
 				5C8A0A872A42225E002F6A14 /* MealViewModel.swift in Sources */,
+				5C3B7CEF2A42354B008DCEF9 /* DessertDetail.swift in Sources */,
+				5C8A0A8C2A42311B002F6A14 /* DessertDetailView.swift in Sources */,
+				5C3B7CF12A4236C8008DCEF9 /* DessertDetailViewModel.swift in Sources */,
 				5C8A0A852A4221B6002F6A14 /* Meal.swift in Sources */,
 				5C8A0A742A4220D8002F6A14 /* Fetch_iOS_Coding_ChallengeApp.swift in Sources */,
 			);

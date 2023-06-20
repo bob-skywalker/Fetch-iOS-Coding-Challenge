@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Fetch_iOS_Coding_ChallengeApp: App {
+    @StateObject var detailViewModel = DessertDetailViewModel()
+
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(detailViewModel)
         }
     }
 }
