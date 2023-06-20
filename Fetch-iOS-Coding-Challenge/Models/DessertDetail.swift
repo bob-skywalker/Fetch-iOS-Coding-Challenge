@@ -65,4 +65,33 @@ struct DetailMeal: Codable {
     let strImageSource: String?
     let strCreativeCommonsConfirmed: String?
     let dateModified: String?
+    
+    var ingredientsDescription: String {
+        var description: String = ""
+        
+        for i in 1...20{
+            let ingredientKey = "strIngredient\(i)"
+            let measureKey = "strMeasure\(i)"
+            
+            if let ingredient = self[ingredientKey], let measure = self[measureKey], !ingredient.isEmpty {
+                let ingredientString = "\(measure) \(ingredient)"
+                if !description.isEmpty {
+                    description += "\n"
+                }
+                description += ingredientString
+            }
+        }
+        
+        return description
+    }
+    
+    subscript(key: String) -> String? {
+        let mirror = Mirror(reflecting: self)
+            for child in mirror.children {
+                if child.label == key {
+                    return child.value as? String
+                }
+            }
+            return nil
+    }
 }

@@ -61,11 +61,11 @@ struct ContentView: View {
                                 }
                                 .frame(maxWidth: .infinity)
                                 .frame(height: geo.size.height * 0.2)
-                                .padding(.horizontal, 10)
+                                .padding(.horizontal, 8)
                                 .background(.white)
                                 .cornerRadius(10)
                                 .shadow(color: .black, radius: 4, x: 0, y: 2)
-                                .padding()
+                                .padding(.horizontal , 10)
                                 
                             }
 
@@ -73,7 +73,7 @@ struct ContentView: View {
                     }
                 }
                 .onAppear(perform: mealViewModel.fetchDesserts)
-                .navigationTitle("Discover Meals")
+                .navigationTitle("Dessert List 🍧")
                 
             }
         }
