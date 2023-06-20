@@ -66,6 +66,8 @@ struct DetailMeal: Codable {
     let strCreativeCommonsConfirmed: String?
     let dateModified: String?
     
+    
+    // computed property for dynamically rendering the ingredients for each dessert
     var ingredientsDescription: String {
         var description: String = ""
         

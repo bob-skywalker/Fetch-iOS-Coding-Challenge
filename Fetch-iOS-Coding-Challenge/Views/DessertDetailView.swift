@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Kingfisher
+import Kingfisher //Kingfisher is used for image caching on user's device
 
 struct DessertDetailView: View {
     var dessert: Dessert
