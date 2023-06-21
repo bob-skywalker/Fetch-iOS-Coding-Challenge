@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C3B7CEF2A42354B008DCEF9 /* DessertDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7CEE2A42354B008DCEF9 /* DessertDetail.swift */; };
 		5C3B7CF12A4236C8008DCEF9 /* DessertDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7CF02A4236C8008DCEF9 /* DessertDetailViewModel.swift */; };
+		5C3B7D002A4295D7008DCEF9 /* MealViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3B7CFF2A4295D7008DCEF9 /* MealViewModel_Tests.swift */; };
 		5C8A0A742A4220D8002F6A14 /* Fetch_iOS_Coding_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A732A4220D8002F6A14 /* Fetch_iOS_Coding_ChallengeApp.swift */; };
 		5C8A0A762A4220D8002F6A14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A752A4220D8002F6A14 /* ContentView.swift */; };
 		5C8A0A782A4220D9002F6A14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C8A0A772A4220D9002F6A14 /* Assets.xcassets */; };
@@ -17,11 +18,24 @@
 		5C8A0A872A42225E002F6A14 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A862A42225E002F6A14 /* MealViewModel.swift */; };
 		5C8A0A8A2A4226A1002F6A14 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8A0A892A4226A1002F6A14 /* Kingfisher */; };
 		5C8A0A8C2A42311B002F6A14 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A8B2A42311B002F6A14 /* DessertDetailView.swift */; };
+		5C8E0E9C2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8E0E9B2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5C3B7CFA2A429544008DCEF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C8A0A682A4220D8002F6A14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C8A0A6F2A4220D8002F6A14;
+			remoteInfo = "Fetch-iOS-Coding-Challenge";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5C3B7CEE2A42354B008DCEF9 /* DessertDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetail.swift; sourceTree = "<group>"; };
 		5C3B7CF02A4236C8008DCEF9 /* DessertDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewModel.swift; sourceTree = "<group>"; };
+		5C3B7CF62A429544008DCEF9 /* Fetch-iOS-Coding-Challenge_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fetch-iOS-Coding-Challenge_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3B7CFF2A4295D7008DCEF9 /* MealViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel_Tests.swift; sourceTree = "<group>"; };
 		5C8A0A702A4220D8002F6A14 /* Fetch-iOS-Coding-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fetch-iOS-Coding-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C8A0A732A4220D8002F6A14 /* Fetch_iOS_Coding_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetch_iOS_Coding_ChallengeApp.swift; sourceTree = "<group>"; };
 		5C8A0A752A4220D8002F6A14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,9 +44,17 @@
 		5C8A0A842A4221B6002F6A14 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		5C8A0A862A42225E002F6A14 /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
 		5C8A0A8B2A42311B002F6A14 /* DessertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
+		5C8E0E9B2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewModel_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5C3B7CF32A429544008DCEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C8A0A6D2A4220D8002F6A14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +66,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C3B7CF72A429544008DCEF9 /* Fetch-iOS-Coding-Challenge_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5C3B7CFF2A4295D7008DCEF9 /* MealViewModel_Tests.swift */,
+				5C8E0E9B2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift */,
+			);
+			path = "Fetch-iOS-Coding-Challenge_Tests";
+			sourceTree = "<group>";
+		};
 		5C8A0A672A4220D8002F6A14 = {
 			isa = PBXGroup;
 			children = (
 				5C8A0A722A4220D8002F6A14 /* Fetch-iOS-Coding-Challenge */,
+				5C3B7CF72A429544008DCEF9 /* Fetch-iOS-Coding-Challenge_Tests */,
 				5C8A0A712A4220D8002F6A14 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				5C8A0A702A4220D8002F6A14 /* Fetch-iOS-Coding-Challenge.app */,
+				5C3B7CF62A429544008DCEF9 /* Fetch-iOS-Coding-Challenge_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +144,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C3B7CF52A429544008DCEF9 /* Fetch-iOS-Coding-Challenge_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C3B7CFE2A429544008DCEF9 /* Build configuration list for PBXNativeTarget "Fetch-iOS-Coding-Challenge_Tests" */;
+			buildPhases = (
+				5C3B7CF22A429544008DCEF9 /* Sources */,
+				5C3B7CF32A429544008DCEF9 /* Frameworks */,
+				5C3B7CF42A429544008DCEF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C3B7CFB2A429544008DCEF9 /* PBXTargetDependency */,
+			);
+			name = "Fetch-iOS-Coding-Challenge_Tests";
+			productName = "Fetch-iOS-Coding-Challenge_Tests";
+			productReference = 5C3B7CF62A429544008DCEF9 /* Fetch-iOS-Coding-Challenge_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5C8A0A6F2A4220D8002F6A14 /* Fetch-iOS-Coding-Challenge */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C8A0A7E2A4220D9002F6A14 /* Build configuration list for PBXNativeTarget "Fetch-iOS-Coding-Challenge" */;
@@ -141,6 +192,10 @@
 				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					5C3B7CF52A429544008DCEF9 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 5C8A0A6F2A4220D8002F6A14;
+					};
 					5C8A0A6F2A4220D8002F6A14 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -163,11 +218,19 @@
 			projectRoot = "";
 			targets = (
 				5C8A0A6F2A4220D8002F6A14 /* Fetch-iOS-Coding-Challenge */,
+				5C3B7CF52A429544008DCEF9 /* Fetch-iOS-Coding-Challenge_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5C3B7CF42A429544008DCEF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C8A0A6E2A4220D8002F6A14 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +243,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C3B7CF22A429544008DCEF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C8E0E9C2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift in Sources */,
+				5C3B7D002A4295D7008DCEF9 /* MealViewModel_Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5C8A0A6C2A4220D8002F6A14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,7 +268,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5C3B7CFB2A429544008DCEF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C8A0A6F2A4220D8002F6A14 /* Fetch-iOS-Coding-Challenge */;
+			targetProxy = 5C3B7CFA2A429544008DCEF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		5C3B7CFC2A429544008DCEF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NHVUWY5RP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bozhong.Fetch-iOS-Coding-Challenge-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fetch-iOS-Coding-Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fetch-iOS-Coding-Challenge";
+			};
+			name = Debug;
+		};
+		5C3B7CFD2A429544008DCEF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NHVUWY5RP;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bozhong.Fetch-iOS-Coding-Challenge-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fetch-iOS-Coding-Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fetch-iOS-Coding-Challenge";
+			};
+			name = Release;
+		};
 		5C8A0A7C2A4220D9002F6A14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -372,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C3B7CFE2A429544008DCEF9 /* Build configuration list for PBXNativeTarget "Fetch-iOS-Coding-Challenge_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C3B7CFC2A429544008DCEF9 /* Debug */,
+				5C3B7CFD2A429544008DCEF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5C8A0A6B2A4220D8002F6A14 /* Build configuration list for PBXProject "Fetch-iOS-Coding-Challenge" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -9,15 +9,14 @@ import Foundation
 import Combine
 
 class DessertDetailViewModel: ObservableObject {
-    @Published var detail: DetailMeal? {
-        didSet{
-            print(detail ?? "N/A")
-        }
-    }
+    
     var cancellables = Set<AnyCancellable>()
+    @Published var detail: DetailMeal?
+
     
     func fetchDessertDetail(with mealId: String){
         guard let urlString = URL(string: "https://themealdb.com/api/json/v1/1/lookup.php?i=\(mealId)") else { return }
+        
         
         URLSession.shared.dataTaskPublisher(for: urlString)
             .tryMap { completion in

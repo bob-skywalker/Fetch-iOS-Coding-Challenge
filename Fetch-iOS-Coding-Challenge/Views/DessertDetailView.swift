@@ -20,38 +20,38 @@ struct DessertDetailView: View {
                 LinearGradient(colors: [.orange, .indigo, .blue], startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea()
                 
-                if let detail = detailViewModel.detail {
-                    
-                    VStack(spacing: 25){
-                        Text(detailViewModel.detail?.strMeal ?? "N/A")
-                            .font(Font.title).bold()
-                        KFImage(URL(string: dessert.strMealThumb))
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(Capsule())
-                        VStack(spacing: 10){
-                            Text("Instruction")
-                                .font(Font.headline).bold()
-                            ScrollView(.vertical){
-                                Text(detailViewModel.detail?.strInstructions ?? "No Instruction")
-                            }
+                
+                
+                VStack(spacing: 25){
+                    Text(detailViewModel.detail?.strMeal ?? "N/A")
+                        .font(Font.title).bold()
+                    KFImage(URL(string: dessert.strMealThumb))
+                        .resizable()
+                        .scaledToFit()
+                        .clipShape(Capsule())
+                    VStack(spacing: 10){
+                        Text("Instruction")
+                            .font(Font.headline).bold()
+                        ScrollView(.vertical){
+                            Text(detailViewModel.detail?.strInstructions ?? "No Instruction")
                         }
-                        
-                        Text("Click For Ingredients")
-                            .padding(.top, 20)
-                            .font(Font.title2)
-                            .foregroundColor(.blue).bold()
-                            .onTapGesture {
-                                ingredientTapClicked = true
-                            }
                     }
-                    .frame(width: geo.size.width * 0.85, height: geo.size.height * 0.96)
-                    .padding()
-                    .background(.ultraThinMaterial)
-                    .clipShape(RoundedRectangle(cornerRadius: 25))
-                } else {
-                    ProgressView()
+                    
+                    Text("Click For Ingredients")
+                        .padding(.top, 20)
+                        .font(Font.title2)
+                        .foregroundColor(.blue).bold()
+                        .onTapGesture {
+                            ingredientTapClicked = true
+                        }
                 }
+                .frame(width: geo.size.width * 0.85, height: geo.size.height * 0.96)
+                .padding()
+                .background(.ultraThinMaterial)
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                
+                
+                
             }
             .sheet(isPresented: $ingredientTapClicked) {
                 ZStack {
@@ -90,7 +90,7 @@ struct DessertDetailView_Previews: PreviewProvider {
         
         let mockViewModel = DessertDetailViewModel()
         mockViewModel.detail = DetailMeal(idMeal: "53049", strMeal: "Apam balik", strDrinkAlternate: nil, strCategory: "Dessert", strArea: "British", strInstructions: "Instructions", strMealThumb: "Thumbnail", strTags: "Cake,Sweet", strYoutube: nil, strIngredient1: "Butter", strIngredient2: "Caster Sugar", strIngredient3: "Self-raising Flour", strIngredient4: "Almonds", strIngredient5: "Baking Powder", strIngredient6: "Eggs", strIngredient7: "Vanilla Extract", strIngredient8: "Almond Extract", strIngredient9: nil, strIngredient10: nil, strIngredient11: nil, strIngredient12: nil, strIngredient13: nil, strIngredient14: nil, strIngredient15: nil, strIngredient16: nil, strIngredient17: nil, strIngredient18: nil, strIngredient19: nil, strIngredient20: nil, strMeasure1: "175g", strMeasure2: "175g", strMeasure3: "140g", strMeasure4: "50g", strMeasure5: "½ tsp", strMeasure6: "3 Medium", strMeasure7: "½ tsp", strMeasure8: "¼ teaspoon", strMeasure9: nil, strMeasure10: nil, strMeasure11: nil, strMeasure12: nil, strMeasure13: nil, strMeasure14: nil, strMeasure15: nil, strMeasure16: nil, strMeasure17: nil, strMeasure18: nil, strMeasure19: nil, strMeasure20: nil, strSource: nil, strImageSource: nil, strCreativeCommonsConfirmed: nil, dateModified: nil)
-
+        
         mockViewModel.fetchDessertDetail(with: dessert.idMeal)
         
         return DessertDetailView(dessert: dessert)
