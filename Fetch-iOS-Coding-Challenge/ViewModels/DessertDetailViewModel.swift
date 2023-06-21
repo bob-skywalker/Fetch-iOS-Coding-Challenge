@@ -11,16 +11,12 @@ import Combine
 class DessertDetailViewModel: ObservableObject {
     
     var cancellables = Set<AnyCancellable>()
-    @Published var detail: DetailMeal? {
-        
-        // property observer for debugging.
-        didSet{
-            print(detail ?? "N/A")
-        }
-    }
+    @Published var detail: DetailMeal?
+
     
     func fetchDessertDetail(with mealId: String){
         guard let urlString = URL(string: "https://themealdb.com/api/json/v1/1/lookup.php?i=\(mealId)") else { return }
+        
         
         URLSession.shared.dataTaskPublisher(for: urlString)
             .tryMap { completion in
