@@ -67,7 +67,7 @@ final class MealViewModel_Tests: XCTestCase {
     }
     
     
-    func test_mealViewModel_downloadWithCombine_shouldReturnItems(){
+    func test_mealViewModel_fetchDesserts_shouldReturnItems(){
         
         // Given
         guard let vm = viewModel else {

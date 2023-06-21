@@ -18,6 +18,7 @@
 		5C8A0A872A42225E002F6A14 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A862A42225E002F6A14 /* MealViewModel.swift */; };
 		5C8A0A8A2A4226A1002F6A14 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 5C8A0A892A4226A1002F6A14 /* Kingfisher */; };
 		5C8A0A8C2A42311B002F6A14 /* DessertDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8A0A8B2A42311B002F6A14 /* DessertDetailView.swift */; };
+		5C8E0E9C2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C8E0E9B2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		5C8A0A842A4221B6002F6A14 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		5C8A0A862A42225E002F6A14 /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
 		5C8A0A8B2A42311B002F6A14 /* DessertDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailView.swift; sourceTree = "<group>"; };
+		5C8E0E9B2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DessertDetailViewModel_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				5C3B7CFF2A4295D7008DCEF9 /* MealViewModel_Tests.swift */,
+				5C8E0E9B2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift */,
 			);
 			path = "Fetch-iOS-Coding-Challenge_Tests";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C8E0E9C2A436CA40047ED65 /* DessertDetailViewModel_Tests.swift in Sources */,
 				5C3B7D002A4295D7008DCEF9 /* MealViewModel_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
