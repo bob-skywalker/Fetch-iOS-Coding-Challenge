@@ -65,5 +65,34 @@ final class MealViewModel_Tests: XCTestCase {
         XCTAssertGreaterThan(vm.desserts.count, 0)
         XCTAssertNotEqual(vm.desserts.count, 0)
     }
+    
+    
+    func test_mealViewModel_downloadWithCombine_shouldReturnItems(){
+        
+        // Given
+        guard let vm = viewModel else {
+            XCTFail()
+            return
+        }
+        
+        // When
+        let expectation = XCTestExpectation(description: "Should return items after a second.")
+        
+        vm.$desserts
+            .dropFirst()
+            .sink { returnedItems in
+                expectation.fulfill()
+            }
+            .store(in: &cancellables)
+        
+        vm.fetchDesserts()
+        
+        // Then
+        wait(for: [expectation], timeout: 3)
+        XCTAssertGreaterThan(vm.desserts.count, 0)
+        
+    }
+    
+    
 
 }
